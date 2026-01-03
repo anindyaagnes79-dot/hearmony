@@ -8,4 +8,6 @@ const productSchema = new mongoose.Schema({
     category: {type: String, require: true},
 })
 
-const productModel = mongoose.models.produect || mongoose.model('product', productSchema)
+const productModel = mongoose.models.product || mongoose.model('product', productSchema)
+
+export default productModel
