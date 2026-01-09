@@ -1,15 +1,49 @@
-import React from "react"
+import React, { useState } from "react"
+import MaskGroup from "../assets/Mask group.png"
 
-const Navbar = () => {
+const Navbar = ({ setPage }) => {
+  const [activePage, setActivePage] = useState("home")
+
+  const handleClick = (page) => {
+    setPage(page)
+    setActivePage(page)
+  }
+
+  const linkClass = (page) =>
+    `text-base font-semibold transition ${
+      activePage === page
+        ? "text-[#355E3B]"
+        : "text-black hover:text-[#355E3B]"
+    }`
+
   return (
-    <nav className="flex w-full justify-between items-center px-12 py-8">
-      <h2 className="text-2xl font-bold">HEARMONY</h2>
+    <nav className="fixed top-0 left-0 w-full bg-white z-[9999] shadow-md">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
 
-      <ul className="flex flex-row gap-8 list-none p-0 m-0">
-        <li className="text-lg font-bold cursor-pointer">HOME</li>
-        <li className="text-lg font-bold cursor-pointer">RESERVATION</li>
-        <li className="text-lg font-bold cursor-pointer">MERCHANDISE</li>
-      </ul>
+        {/* Logo */}
+        <img
+          src={MaskGroup}
+          alt="Hearmony Logo"
+          className="h-10 cursor-pointer"
+          onClick={() => handleClick("home")}
+        />
+
+        {/* Links */}
+        <div className="flex gap-8">
+          <button onClick={() => handleClick("home")} className={linkClass("home")}>
+            HOME
+          </button>
+
+          <button onClick={() => handleClick("reservation")} className={linkClass("reservation")}>
+            RESERVATION
+          </button>
+
+          <button onClick={() => handleClick("merch")} className={linkClass("merch")}>
+            MERCHANDISE
+          </button>
+        </div>
+
+      </div>
     </nav>
   )
 }

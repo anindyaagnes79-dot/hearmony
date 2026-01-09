@@ -1,16 +1,29 @@
+import { useState } from "react";
 import Navbar from "./components/Navbar";
-import Banner from "./components/Banner";
 import HomeContent from "./components/HomeContent";
-import MerchSlider from "./components/MerchSlider";
+import MerchCatalog from "./components/MerchCatalog";
 import Footer from "./components/Footer";
 
 function App() {
+  const [page, setPage] = useState("home");
+
   return (
     <>
-      <Navbar />
-      <Banner />
-      <HomeContent />
-      <MerchSlider />
+      {/* Navbar */}
+      <Navbar setPage={setPage} />
+
+      {/* Konten utama */}
+      <div>
+        {page === "home" && (
+          <>
+            <HomeContent setPage={setPage} />
+          </>
+        )}
+
+        {page === "merch" && <MerchCatalog />}
+      </div>
+
+      {/* Footer */}
       <Footer />
     </>
   );
