@@ -3,7 +3,7 @@ import logoFooter from '../assets/LOGO FOOTER.png'
 
 // LOGO SOSMED PNG
 import instagram from '../assets/instagram.png'
-import twitter from '../assets/twitter.png'
+import gmail from '../assets/gmail.png'
 import tiktok from '../assets/tiktok.png'
 
 function Footer() {
