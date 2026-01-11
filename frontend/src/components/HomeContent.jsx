@@ -71,7 +71,7 @@ function HomeContent({ setPage = () => {} }) {
 
       {/* Banner Logo */}
       <div className="relative z-10 text-center py-[180px]">
-        <img src={LOGO} className="mx-auto w-40 md:w-[250px]" alt="logo" />
+        <img src={LOGO} className="mx-auto w-44 sm:w-56 md:w-[900px]" alt="logo" />
         <h1 className="mt-6 text-4xl md:text-6xl text-[#f7d154] font-bold font-['Grunge-Decade']">
           <b>To be Loved</b> <b>is To be Heard</b>
         </h1>
