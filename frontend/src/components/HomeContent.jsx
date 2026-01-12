@@ -32,13 +32,13 @@ import Booth from "../assets/booth.avif";
 import BgTxt2 from "../assets/bg texture 2.png";
 
 //merch
-import EnamelPin from "../assets/Merch/Enamel Pin.jpg";
-import Keychain from "../assets/Merch/Keychain.jpg";
-import Kipas from "../assets/Merch/Kipas.jpg";
-import StickerFishies from "../assets/Merch/Sticker Pack Fishies.jpg";
-import StickerHearmony from "../assets/Merch/Sticker Pack Hearmony.jpg";
-import StickerSkena from "../assets/Merch/Sticker Pack Skena.jpg";
-import StickerSatuan from "../assets/Merch/Sticker Satuan.jpg";
+import EnamePin from "../assets/Merch/Enamel Pin.jpg";
+import Kechain from "../assets/Merch/Keychain.jpg";
+import Kpas from "../assets/Merch/Kipas.jpg";
+import StckerFishies from "../assets/Merch/Sticker Pack Fishies.jpg";
+import StckerHearmony from "../assets/Merch/Sticker Pack Hearmony.jpg";
+import StckerSkena from "../assets/Merch/Sticker Pack Skena.jpg";
+import StckerSatuan from "../assets/Merch/Sticker Satuan.jpg";
 // MERCH 2 PNG
 import EnamelPin from "../assets/Merch 2/enamel pin.png";
 import Keychain from "../assets/Merch 2/keychain.png";
