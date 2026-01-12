@@ -76,7 +76,7 @@ function HomeContent({ setPage = () => {} }) {
     <>
       <div
         className="
-      bg-gradient-to-br from-black via-gray-900 to-black min-h-screen]
+      bg-gradient-to-br from-black via-gray-900 to-black min-h-screen
       relative 
       overflow-hidden
       text-white
@@ -152,20 +152,9 @@ function HomeContent({ setPage = () => {} }) {
         ></div>
 
         {/*banner*/}
-        <div
-          className="
-            relative z-[2]
-            w-full
-            text-center
-            px-4 pb-3 pt-6
-            md:px-12 py-12
-            tracking-[1px]
-            md:tracking-[4px]
-            font-bold
-            font-['Grunge-Decade']
-            bg-[repeating-conic-gradient(from_0deg_at_50%_50%,#3a7d1e_0deg_15deg,#005f34_15deg_30deg,#9e0b28_30deg_45deg,#102a44_45deg_60deg,#004c97_60deg_75deg)]
-          "
-        >
+        {/* ================= HERO ================= */}
+        <div className="relative z-10 w-full pt-28 sm:pt-32 md:pt-40 pb-12 md:pb-20 px-4 sm:px-6 md:px-12 text-center font-bold font-['Grunge-Decade'] tracking-wide md:tracking-widest bg-[repeating-conic-gradient(from_0deg_at_50%_50%,#3a7d1e_0deg_15deg,#005f34_15deg_30deg,#9e0b28_30deg_45deg,#102a44_45deg_60deg,#004c97_60deg_75deg)]">
+
           <div className="absolute inset-0 z-[2] blur-sm opacity-90">
             <img
               className="absolute md:top-[100px] left-[-100px] scale-[0.2]"
@@ -189,18 +178,15 @@ function HomeContent({ setPage = () => {} }) {
             />
           </div>
 
-          <img className="relative z-[2] mx-auto" src={LOGO} alt="banner" />
+          <img src={LOGO} alt="banner" className="mx-auto w-28 sm:w-36 md:w-44 lg:w-52 mb-6"/>
 
-          <h1
-            className="
-                relative 
-                z-[2] 
-                mt-6 
-                text-[150%] 
-                md:text-[300%]
-                text-[#f7d154]"
-          >
-            <b id="tbl">To be Loved</b> <b id="tbh">is To be Heard</b>
+          <h1 className="text-[#f7d154] font-bold leading-tight">
+            <span className="block text-lg sm:text-xl md:text-3xl lg:text-4xl">
+              To be Loved
+            </span>
+            <span className="block text-base sm:text-lg md:text-3xl opacity-90">
+              is To be Heard
+            </span>
           </h1>
         </div>
 
@@ -216,21 +202,11 @@ function HomeContent({ setPage = () => {} }) {
         ></div>
 
         {/*booth*/}
-        <div
-          className="
-            relative
-            flex flex-col
-            items-center
-            text-center
-            px-4 pt-20 pb-2
-            md:px-10 md:py-20
-            max-w-[1000px]
-            mx-auto
-        "
-        >
+        <section className="relative z-10 py-20 md:py-28">
+
           <h1
-            className="
-          mb-20 text-[300%] md:text-[76px] font-bold md:tracking-[5px]"
+            className="text-center
+          mb-20 text-xl sm:text-2xl md:text-4xl lg:text-6xl font-bold md:tracking-[5px]"
           >
             Our Booth
           </h1>
@@ -264,35 +240,35 @@ function HomeContent({ setPage = () => {} }) {
 
           {/* elements */}
           <div className="" id="elements">
-            <div className="absolute scale-[0.2] top-[-30px] right-[-35%] z-[3]">
+            <div className="hidden md:block absolute scale-[0.2] top-[-30px] right-[-35%] z-[3]">
               <img src={Vector137} alt="element" className=" blur-[1.5px]" />
             </div>
 
-            <div className="absolute scale-[0.07] top-[-700px] right-[-350px] z-[3]">
+            <div className="hidden md:block absolute scale-[0.07] top-[-700px] right-[-350px] z-[3]">
               <img src={Component2} alt="element" className=" blur-[1.5px]" />
             </div>
 
-            <div className="absolute scale-[0.2] top-[-150px] left-[-450px] z-[3] opacity-80">
+            <div className="hidden md:block absolute scale-[0.2] top-[-150px] left-[-450px] z-[3] opacity-80">
               <img src={Vector103} alt="element" className=" blur-[2px]" />
             </div>
 
-            <div className="absolute scale-[0.6] bottom-[750px] right-[-130px] z-[3]">
+            <div className="hidden md:block absolute scale-[0.6] bottom-[750px] right-[-130px] z-[3]">
               <img src={Vector104} alt="element" className=" blur-[1.5px]" />
             </div>
 
-            <div className="absolute scale-[0.3] top-[100px] left-[-650px] z-[3]">
+            <div className="hidden md:block absolute scale-[0.3] top-[100px] left-[-650px] z-[3]">
               <img src={Component1} alt="element" className=" blur-[1.5px]" />
             </div>
 
-            <div className="absolute scale-[0.3] md:bottom-[300px] bottom-[130px] left-[-170px] z-[1] opacity-80 blur-[4px]">
+            <div className="hidden md:block absolute scale-[0.3] md:bottom-[300px] bottom-[130px] left-[-170px] z-[1] opacity-80 blur-[4px]">
               <img src={Vector92} alt="element" className="" />
             </div>
 
-            <div className="absolute md:scale-[0.25] scale-[0.08] md:bottom-[-60px] bottom-[-230px] right-[-270px] z-[3] opacity-80">
+            <div className="hidden md:block absolute md:scale-[0.25] scale-[0.08] md:bottom-[-60px] bottom-[-230px] right-[-270px] z-[3] opacity-80">
               <img src={Vector135} alt="element" className=" blur-[1.5px]" />
             </div>
 
-            <div className="absolute scale-[0.1] md:scale-[0.3] bottom-[-160px] md:bottom-[0] left-[-170px] md:left-[-220px] z-[3] opacity-80">
+            <div className="hidden md:block absolute scale-[0.1] md:scale-[0.3] bottom-[-160px] md:bottom-[0] left-[-170px] md:left-[-220px] z-[3] opacity-80">
               <img src={Vector136} alt="element" className=" blur-[1.5px]" />
             </div>
           </div>
@@ -301,7 +277,7 @@ function HomeContent({ setPage = () => {} }) {
           </div>
 
           {/* booth sections */}
-          <div className="space-y-40 ">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-10">
             {[
               {
                 title: "To The Past and To The Future",
@@ -321,12 +297,13 @@ function HomeContent({ setPage = () => {} }) {
             ].map((item, i) => (
               <div
                 key={i}
-                className={`group flex flex-col ${
-                  i % 2 !== 0 ? "md:flex-row-reverse" : "md:flex-row"
-                } gap-12 md:gap-24 items-center`}
+                className={`
+                  group flex flex-col md:flex-row
+                  ${i % 2 !== 0 ? "md:flex-row-reverse" : ""}
+                  gap-10 md:gap-20 items-center`}
               >
                 {/* image */}
-                <div className="relative w-full md:w-1/2">
+                <div className="relative w-full md:w-1/2 max-w-md mx-auto">
                   <div className="absolute -inset-4 bg-[#355E3B]/20 rounded-[2rem] blur-xl opacity-0 group-hover:opacity-100 transition duration-700" />
                   <div className="relative w-full aspect-square overflow-hidden rounded-[2.5rem] border border-white/10 shadow-2xl">
                     <img
@@ -358,14 +335,14 @@ function HomeContent({ setPage = () => {} }) {
 
           {/*performance*/}
           <div className="pt-24 pb-12 text-center">
-            <h1 className="mb-2 text-[200%] md:text-[76px] font-bold tracking-[5px]">
+            <h1 className="mb-2 text-xl sm:text-2xl md:text-4xl lg:text-6xl md:text-[76px] font-bold tracking-[5px]">
               Our Performance?!
             </h1>
             <h2 className="mb-20 text-[180%] md:text-[56px] font-bold tracking-[10px]">
               Stay Tuned!
             </h2>
           </div>
-        </div>
+        </section>
 
         {/*reservation*/}
         <div
@@ -382,7 +359,7 @@ function HomeContent({ setPage = () => {} }) {
         >
           <h2
             className="
-          text-[200%]
+          text-xl sm:text-2xl md:text-4xl lg:text-6xl
           md:text-[76px]
           tracking-[5px]
           md:tracking-[20px]
@@ -422,8 +399,11 @@ function HomeContent({ setPage = () => {} }) {
         </div>
 
         {/*====================== MERCH ====================== */}
-        <div className="mt-32 relative z-10">
-          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+        <section className="relative z-10 pt-24 md:pt-32 pb-20 md:pb-28">
+
+        
+
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center px-4">
             {/* TEXT */}
             <div className="relative bg-gradient-to-br from-[#002147]/80 to-black/80 backdrop-blur-lg p-8 rounded-3xl shadow-2xl border border-[#355E3B]/40 group hover:shadow-[#355E3B]/30 transition-shadow duration-500">
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#355E3B]/15 to-[#002147]/15 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
@@ -461,7 +441,7 @@ function HomeContent({ setPage = () => {} }) {
               >
                 {merchSlides.map((slide, i) => (
                   <SwiperSlide key={i}>
-                    <div className="relative group rounded-3xl overflow-hidden shadow-2xl border border-[#355E3B]/40 max-w-md mx-auto bg-gradient-to-br from-[#002147]/20 to-black/20 backdrop-blur-sm">
+                    <div className="relative group rounded-3xl overflow-hidden shadow-2xl border border-[#355E3B]/40 max-w-sm sm:max-w-md mx-auto bg-gradient-to-br from-[#002147]/20 to-black/20 backdrop-blur-sm">
                       <div className="aspect-[4/3] overflow-hidden">
                         <img
                           src={slide.img}
@@ -488,7 +468,7 @@ function HomeContent({ setPage = () => {} }) {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
 
       <style jsx>{`
