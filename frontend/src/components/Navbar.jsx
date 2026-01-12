@@ -1,13 +1,11 @@
 import React, { useState } from "react"
 import MaskGroup from "../assets/Mask group.png"
+import { Link, NavLink } from "react-router-dom"
 
 const Navbar = ({ setPage }) => {
   const [activePage, setActivePage] = useState("home")
 
-  const handleClick = (page) => {
-    setPage(page)
-    setActivePage(page)
-  }
+
 
   const linkClass = (page) =>
     `text-base font-semibold transition ${
@@ -21,26 +19,22 @@ const Navbar = ({ setPage }) => {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
 
         {/* Logo */}
-        <img
+        <NavLink to="/" onClick={() => setActivePage("home")}>
+          <img
           src={MaskGroup}
           alt="Hearmony Logo"
           className="h-10 cursor-pointer"
-          onClick={() => handleClick("home")}
-        />
+          />
+        </NavLink>
+        
 
         {/* Links */}
         <div className="flex gap-8">
-          <button onClick={() => handleClick("home")} className={linkClass("home")} >
-            HOME
-          </button>
+          <Link to="/" className={linkClass("home")} onClick={() => setActivePage("home")}>HOME</Link>
 
-          <button onClick={() => handleClick("reservation")} className={linkClass("reservation")}>
-            RESERVATION
-          </button>
+          <Link to="/reservation" className={linkClass("reservation")} onClick={() => setActivePage("reservation")}>RESERVATION</Link>
 
-          <button onClick={() => handleClick("merch")} className={linkClass("merch")}>
-            MERCHANDISE
-          </button>
+          <Link to="/merchandise" className={linkClass("merchandise")} onClick={() => setActivePage("reservation")}>MERCHANDISE</Link>
         </div>
 
       </div>
