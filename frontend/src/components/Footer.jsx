@@ -10,7 +10,6 @@ function Footer() {
   return (
     <footer className="bg-black text-white py-12 px-8">
       <div className="max-w-7xl mx-auto flex flex-col items-center gap-6">
-
         {/* LOGO HEARMONY */}
         <img
           src={logoFooter}
@@ -55,7 +54,7 @@ function Footer() {
 
         {/* COPYRIGHT */}
         <p className="text-gray-500 text-sm text-center mt-6">
-          © 2026 Aksang Cakru 31
+          © Hearmony of Us
         </p>
       </div>
     </footer>
