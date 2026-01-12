@@ -178,7 +178,7 @@ function HomeContent({ setPage = () => {} }) {
             />
           </div>
 
-          <img src={LOGO} alt="banner" className="mx-auto w-28 sm:w-36 md:w-44 lg:w-52 mb-6"/>
+          <img src={LOGO} alt="banner" className="mx-auto w-28 md:w-44 lg:w-56 xl:w-64 max-w-[280px] mb-6"/>
 
           <h1 className="text-[#f7d154] font-bold leading-tight">
             <span className="block text-lg sm:text-xl md:text-3xl lg:text-4xl">
