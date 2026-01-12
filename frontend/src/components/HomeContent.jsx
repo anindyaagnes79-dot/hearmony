@@ -81,7 +81,8 @@ function HomeContent({ setPage = () => {} }) {
       overflow-hidden
       text-white
       font-['Perandory-Semi-Condensed']
-      tracking-[2px]
+      tracking-[1px]
+      md:tracking-[2px]
       "
       >
         {/*element bg*/}
@@ -157,7 +158,8 @@ function HomeContent({ setPage = () => {} }) {
             w-full
             text-center
             px-12 py-12
-            tracking-[4px]
+            tracking-[1px]
+            md:tracking-[4px]
             font-bold
             font-['Grunge-Decade']
             bg-[repeating-conic-gradient(from_0deg_at_50%_50%,#3a7d1e_0deg_15deg,#005f34_15deg_30deg,#9e0b28_30deg_45deg,#102a44_45deg_60deg,#004c97_60deg_75deg)]
@@ -193,7 +195,7 @@ function HomeContent({ setPage = () => {} }) {
                 relative 
                 z-[2] 
                 mt-6 
-                text-[56px] 
+                text-[300%] 
                 text-[#f7d154]"
           >
             <b id="tbl">To be Loved</b> <b id="tbh">is To be Heard</b>
