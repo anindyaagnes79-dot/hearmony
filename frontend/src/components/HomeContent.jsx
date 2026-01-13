@@ -60,7 +60,7 @@ const merchSlides = [
   { img: StickerSatuan, name: "Sticker Satuan" },
 ];
 
-function HomeContent({ setPage = () => {} }) {
+function HomeContent() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const vectors = [
     Vector92,
@@ -89,92 +89,92 @@ function HomeContent({ setPage = () => {} }) {
       "
       >
         {/*element bg*/}
-        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_20%_20%,#004c97,transparent_80%)] animate-[pulse_2.5s_ease-in-out_infinite]"></div>
-        <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_90%_90%,#3a7d1e,transparent_80%)] animate-[pulse_2.5s_ease-in-out_infinite]"></div>
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-green-400 rounded-full animate-ping opacity-75"></div>
+        <div className="absolute pointer-events-none top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_20%_20%,#004c97,transparent_80%)] animate-[pulse_2.5s_ease-in-out_infinite]"></div>
+        <div className="absolute pointer-events-none bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_90%_90%,#3a7d1e,transparent_80%)] animate-[pulse_2.5s_ease-in-out_infinite]"></div>
+        <div className="absolute pointer-events-none top-1/4 left-1/4 w-2 h-2 bg-green-400 rounded-full animate-ping opacity-75"></div>
 
         <div
-          className="absolute top-3/4 right-1/4 w-5 h-5 bg-blue-400 rounded-full animate-ping opacity-60"
+          className="absolute pointer-events-none top-3/4 right-1/4 w-5 h-5 bg-blue-400 rounded-full animate-ping opacity-60"
           style={{ animationDelay: "1s" }}
         ></div>
         <div
-          className="absolute bottom-1/4 left-1/2 w-6 h-6 bg-yellow-400 rounded-full animate-ping opacity-80"
+          className="absolute pointer-events-none bottom-1/4 left-1/2 w-6 h-6 bg-yellow-400 rounded-full animate-ping opacity-80"
           style={{ animationDelay: "2s" }}
         ></div>
         <div
-          className="absolute top-1/2 right-1/2 w-4 h-4 bg-purple-400 rounded-full animate-ping opacity-50"
+          className="absolute pointer-events-none top-1/2 right-1/2 w-4 h-4 bg-purple-400 rounded-full animate-ping opacity-50"
           style={{ animationDelay: "0.5s" }}
         ></div>
         <div
-          className="absolute bottom-1/3 left-1/3 w-4 h-4 bg-pink-400 rounded-full animate-ping opacity-70"
+          className="absolute pointer-events-none bottom-1/3 left-1/3 w-4 h-4 bg-pink-400 rounded-full animate-ping opacity-70"
           style={{ animationDelay: "1.5s" }}
         ></div>
         <div
-          className="absolute top-1/38left-2/3 w-5 h-5 bg-orange-400 rounded-full animate-ping opacity-65"
+          className="absolute pointer-events-none top-1/38left-2/3 w-5 h-5 bg-orange-400 rounded-full animate-ping opacity-65"
           style={{ animationDelay: "2.5s" }}
         ></div>
         <div
-          className="absolute top-1/6 left-1/6 w-4 h-4 bg-red-400 rounded-full animate-ping opacity-70"
+          className="absolute pointer-events-none top-1/6 left-1/6 w-4 h-4 bg-red-400 rounded-full animate-ping opacity-70"
           style={{ animationDelay: "0.3s" }}
         ></div>
         <div
-          className="absolute top-1/8 right-1/5 w-3 h-3 bg-green-400 rounded-full animate-ping opacity-60"
+          className="absolute pointer-events-none top-1/8 right-1/5 w-3 h-3 bg-green-400 rounded-full animate-ping opacity-60"
           style={{ animationDelay: "1.2s" }}
         ></div>
         <div
-          className="absolute top-1/3 left-3/4 w-4 h-4 bg-blue-300 rounded-full animate-ping opacity-50"
+          className="absolute pointer-events-none top-1/3 left-3/4 w-4 h-4 bg-blue-300 rounded-full animate-ping opacity-50"
           style={{ animationDelay: "0.8s" }}
         ></div>
         <div
-          className="absolute top-2/5 right-2/5 w-5 h-5 bg-purple-300 rounded-full animate-ping opacity-65"
+          className="absolute pointer-events-none top-2/5 right-2/5 w-5 h-5 bg-purple-300 rounded-full animate-ping opacity-65"
           style={{ animationDelay: "1.5s" }}
         ></div>
         <div
-          className="absolute top-3/5 left-1/5 w-3 h-3 bg-pink-300 rounded-full animate-ping opacity-75"
+          className="absolute pointer-events-none top-3/5 left-1/5 w-3 h-3 bg-pink-300 rounded-full animate-ping opacity-75"
           style={{ animationDelay: "2s" }}
         ></div>
         <div
-          className="absolute top-4/5 right-1/6 w-6 h-6 bg-yellow-300 rounded-full animate-ping opacity-60"
+          className="absolute pointer-events-none top-4/5 right-1/6 w-6 h-6 bg-yellow-300 rounded-full animate-ping opacity-60"
           style={{ animationDelay: "2.3s" }}
         ></div>
         <div
-          className="absolute top-1/2 left-1/8 w-4 h-4 bg-indigo-400 rounded-full animate-ping opacity-55"
+          className="absolute pointer-events-none top-1/2 left-1/8 w-4 h-4 bg-indigo-400 rounded-full animate-ping opacity-55"
           style={{ animationDelay: "0.5s" }}
         ></div>
         <div
-          className="absolute bottom-1/5 left-2/3 w-3 h-3 bg-orange-300 rounded-full animate-ping opacity-70"
+          className="absolute pointer-events-none bottom-1/5 left-2/3 w-3 h-3 bg-orange-300 rounded-full animate-ping opacity-70"
           style={{ animationDelay: "1.8s" }}
         ></div>
         <div
-          className="absolute bottom-1/6 right-1/4 w-4 h-4 bg-teal-400 rounded-full animate-ping opacity-65"
+          className="absolute pointer-events-none bottom-1/6 right-1/4 w-4 h-4 bg-teal-400 rounded-full animate-ping opacity-65"
           style={{ animationDelay: "2.1s" }}
         ></div>
         <div
-          className="absolute bottom-1/3 left-1/9 w-3 h-3 bg-lime-400 rounded-full animate-ping opacity-60"
+          className="absolute pointer-events-none bottom-1/3 left-1/9 w-3 h-3 bg-lime-400 rounded-full animate-ping opacity-60"
           style={{ animationDelay: "1s" }}
         ></div>
 
         {/*banner*/}
         {/* ================= HERO ================= */}
         <div className="relative w-full z-10 w-full pt-28 sm:pt-32 md:pt-40 pb-12 md:pb-20 px-4 sm:px-6 md:px-12 text-center font-bold font-['Grunge-Decade'] tracking-wide md:tracking-widest bg-[repeating-conic-gradient(from_0deg_at_50%_50%,#3a7d1e_0deg_15deg,#005f34_15deg_30deg,#9e0b28_30deg_45deg,#102a44_45deg_60deg,#004c97_60deg_75deg)]">
-          <div className="absolute inset-0 z-[2] blur-sm opacity-0 md:opacity-90">
+          <div className="absolute pointer-events-none inset-0 z-[2] blur-sm opacity-0 md:opacity-90">
             <img
-              className="absolute md:top-[100px] left-[-100px] scale-[0.2]"
+              className="absolute pointer-events-none md:top-[100px] left-[-100px] scale-[0.2]"
               src={Vector135}
               alt="elementbanner"
             />
             <img
-              className="absolute top-[150px] right-[0px] scale-[0.22]"
+              className="absolute pointer-events-none top-[150px] right-[0px] scale-[0.22]"
               src={Vector136}
               alt="elementbanner"
             />
             <img
-              className="absolute top-[-220px] left-[-100px] scale-[0.25]"
+              className="absolute pointer-events-none top-[-220px] left-[-100px] scale-[0.25]"
               src={Vector96}
               alt="elementbanner"
             />
             <img
-              className="absolute top-[-80px] right-[-10px] scale-[0.5]"
+              className="absolute pointer-events-none top-[-80px] right-[-10px] scale-[0.5]"
               src={Vector104}
               alt="elementbanner"
             />
@@ -217,7 +217,7 @@ function HomeContent({ setPage = () => {} }) {
           </h1>
 
           {/*banjir elements bg jujuuur*/}
-          <div className="absolute blur-[4px] opacity-15 animate-[pulse_6s_ease-in-out_infinite]">
+          <div className="absolute pointer-events-none blur-[4px] opacity-15 animate-[pulse_6s_ease-in-out_infinite]">
             <img src={Vector136} alt="element" className=" scale-[0.2]" />
             <img src={Vector135} alt="element" className=" scale-[0.2]" />
             <img src={Vector137} alt="element" className=" scale-[0.2]" />
@@ -225,7 +225,7 @@ function HomeContent({ setPage = () => {} }) {
             <img src={Vector92} alt="element" className=" scale-[0.3]" />
             <img src={Vector103} alt="element" className=" scale-[0.3]" />
           </div>
-          <div className="absolute blur-[4px] opacity-15 top-[20px] right-[-700px] animate-[pulse_6s_ease-in-out_infinite]">
+          <div className="absolute pointer-events-none blur-[4px] opacity-15 top-[20px] right-[-700px] animate-[pulse_6s_ease-in-out_infinite]">
             <img src={Vector118} alt="element" className=" scale-[0.3]" />
             <img src={Vector112} alt="element" className=" scale-[0.3]" />
             <img src={Vector104} alt="element" className=" scale-[0.4]" />
@@ -234,7 +234,7 @@ function HomeContent({ setPage = () => {} }) {
             <img src={Vector96} alt="element" className=" scale-[0.3]" />
             <img src={Vector135} alt="element" className=" scale-[0.2]" />
           </div>
-          <div className="absolute blur-[4px] opacity-15 top-[-200px] left-[-400px] animate-[pulse_6s_ease-in-out_infinite]">
+          <div className="absolute pointer-events-none pointer-events-none blur-[4px] opacity-15 top-[-200px] left-[-400px] animate-[pulse_6s_ease-in-out_infinite]">
             <img src={Vector135} alt="element" className=" scale-[0.2]" />
             <img src={Vector137} alt="element" className=" scale-[0.2]" />
             <img src={Vector96} alt="element" className=" scale-[0.2]" />
@@ -245,39 +245,39 @@ function HomeContent({ setPage = () => {} }) {
 
           {/* elements */}
           <div className="" id="elements">
-            <div className="hidden md:block absolute scale-[0.2] top-[-30px] right-[-35%] z-[3]">
+            <div className="hidden md:block absolute pointer-events-none scale-[0.2] top-[-30px] right-[-35%] z-[3]">
               <img src={Vector137} alt="element" className=" blur-[1.5px]" />
             </div>
 
-            <div className="hidden md:block absolute scale-[0.07] top-[-700px] right-[-350px] z-[3]">
+            <div className="hidden md:block absolute pointer-events-none scale-[0.07] top-[-700px] right-[-350px] z-[3]">
               <img src={Component2} alt="element" className=" blur-[1.5px]" />
             </div>
 
-            <div className="hidden md:block absolute scale-[0.2] top-[-150px] left-[-450px] z-[3] opacity-80">
+            <div className="hidden md:block absolute pointer-events-none scale-[0.2] top-[-150px] left-[-450px] z-[3] opacity-80">
               <img src={Vector103} alt="element" className=" blur-[2px]" />
             </div>
 
-            <div className="hidden md:block absolute scale-[0.6] bottom-[750px] right-[-130px] z-[3]">
+            <div className="hidden md:block absolute pointer-events-none scale-[0.6] bottom-[750px] right-[-130px] z-[3]">
               <img src={Vector104} alt="element" className=" blur-[1.5px]" />
             </div>
 
-            <div className="hidden md:block absolute scale-[0.3] top-[100px] left-[-650px] z-[3]">
+            <div className="hidden md:block absolute pointer-events-none scale-[0.3] top-[100px] left-[-650px] z-[3]">
               <img src={Component1} alt="element" className=" blur-[1.5px]" />
             </div>
 
-            <div className="hidden md:block absolute scale-[0.3] md:bottom-[300px] bottom-[130px] left-[-170px] z-[1] opacity-80 blur-[4px]">
+            <div className="hidden md:block absolute pointer-events-none scale-[0.3] md:bottom-[300px] bottom-[130px] left-[-170px] z-[1] opacity-80 blur-[4px]">
               <img src={Vector92} alt="element" className="" />
             </div>
 
-            <div className="hidden md:block absolute md:scale-[0.25] scale-[0.08] md:bottom-[-60px] bottom-[-230px] right-[-270px] z-[3] opacity-80">
+            <div className="hidden md:block absolute pointer-events-none md:scale-[0.25] scale-[0.08] md:bottom-[-60px] bottom-[-230px] right-[-270px] z-[3] opacity-80">
               <img src={Vector135} alt="element" className=" blur-[1.5px]" />
             </div>
 
-            <div className="hidden md:block absolute scale-[0.1] md:scale-[0.3] bottom-[-160px] md:bottom-[0] left-[-170px] md:left-[-220px] z-[3] opacity-80">
+            <div className="hidden md:block absolute pointer-events-none scale-[0.1] md:scale-[0.3] bottom-[-160px] md:bottom-[0] left-[-170px] md:left-[-220px] z-[3] opacity-80">
               <img src={Vector136} alt="element" className=" blur-[1.5px]" />
             </div>
           </div>
-          <div className="absolute scale-[0.3] bottom-[-270px] md:bottom-[-570px] md:left-[0px] z-[3]">
+          <div className="absolute pointer-events-none scale-[0.3] bottom-[-270px] md:bottom-[-570px] md:left-[0px] z-[3]">
             <img src={tanganhijau} alt="element" className="" />
           </div>
 
@@ -309,14 +309,14 @@ function HomeContent({ setPage = () => {} }) {
               >
                 {/* image */}
                 <div className="relative w-full md:w-1/2 max-w-md mx-auto">
-                  <div className="absolute -inset-4 bg-[#355E3B]/20 rounded-[2rem] blur-xl opacity-0 group-hover:opacity-100 transition duration-700" />
+                  <div className="absolute pointer-events-none -inset-4 bg-[#355E3B]/20 rounded-[2rem] blur-xl opacity-0 group-hover:opacity-100 transition duration-700" />
                   <div className="relative w-full aspect-square overflow-hidden rounded-[2.5rem] border border-white/10 shadow-2xl">
                     <img
                       src={item.image}
                       alt={item.title}
                       className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 p-10"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                    <div className="absolute pointer-events-none inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   </div>
                 </div>
 
@@ -396,7 +396,7 @@ function HomeContent({ setPage = () => {} }) {
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center px-4">
             {/* TEXT */}
             <div className="relative bg-gradient-to-br from-[#002147]/80 to-black/80 backdrop-blur-lg p-8 rounded-3xl shadow-2xl border border-[#355E3B]/40 group hover:shadow-[#355E3B]/30 transition-shadow duration-500">
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#355E3B]/15 to-[#002147]/15 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+              <div className="absolute pointer-events-none pointer-events-none inset-0 rounded-3xl bg-gradient-to-r from-[#355E3B]/15 to-[#002147]/15 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
               <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight font-utstaybro text-transparent bg-clip-text bg-gradient-to-r from-white via-[#355E3B] to-[#355E3B] animate-fade-in">
                 Don’t forget to check our <br />
                 <span className="text-[#355E3B] font-grunge animate-pulse drop-shadow-lg">
@@ -443,15 +443,15 @@ function HomeContent({ setPage = () => {} }) {
                         />
                       </div>
                       {/* Overlay gradien yang muncul*/}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      <div className="absolute pointer-events-none inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       {/* Nama produk muncul*/}
-                      <div className="absolute bottom-0 left-0 right-0 p-4 text-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                      <div className="absolute pointer-events-none bottom-0 left-0 right-0 p-4 text-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                         <h3 className="text-white text-xl md:text-2xl font-bold font-grunge drop-shadow-lg">
                           {slide.name}
                         </h3>
                       </div>
                       {/* Efek cahaya halus*/}
-                      <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#355E3B]/10 to-[#002147]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                      <div className="absolute pointer-events-none inset-0 rounded-3xl bg-gradient-to-r from-[#355E3B]/10 to-[#002147]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                     </div>
                   </SwiperSlide>
                 ))}
