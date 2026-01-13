@@ -382,22 +382,10 @@ function HomeContent({ setPage = () => {} }) {
           </h4>
           <button
             onClick={() => {
-              Navigate("/reservation");
+              Navigate("/merchandise"); 
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
-            className="
-            inline-block
-            mt-4
-            rounded-full
-            bg-[#5a8f3e]
-            px-5 py-2
-            text-[20px]
-            shadow-lg
-            transition-transform
-            hover:scale-110
-            hover:bg-[#4a7b32]
-            cursor-pointer
-          "
+            className="bg-gradient-to-r from-[#355E3B] to-[#2f5233] text-white px-10 py-4 rounded-full font-grunge font-bold text-lg hover:scale-110 hover:shadow-lg hover:shadow-[#355E3B]/50 transition-all duration-300 animate-bounce-subtle"
           >
             RESERVATION
           </button>
