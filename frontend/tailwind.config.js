@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        utstaybro: ["UT Staybro", "sans-serif"],
+        perandory: ["Perandory", "sans-serif"],
+        grunge: ["Grunge Decade", "sans-serif"],
+      }
+    },
   },
   plugins: [],
 }

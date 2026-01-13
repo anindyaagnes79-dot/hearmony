@@ -80,7 +80,7 @@ function HomeContent({ setPage = () => {} }) {
       relative 
       overflow-hidden
       text-white
-      font-['Perandory-Semi-Condensed']
+      font-perandory
       tracking-[1px]
       md:tracking-[2px]
       "
@@ -323,7 +323,7 @@ function HomeContent({ setPage = () => {} }) {
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
                       {item.title}
                     </h2>
-                    <p className="text-gray-300 text-lg md:text-xl leading-relaxed font-perandory-semi-condensed">
+                    <p className="text-gray-300 text-lg md:text-xl leading-relaxed font-perandory">
                       {item.desc}
                     </p>
                     <div
@@ -406,13 +406,13 @@ function HomeContent({ setPage = () => {} }) {
             {/* TEXT */}
             <div className="relative bg-gradient-to-br from-[#002147]/80 to-black/80 backdrop-blur-lg p-8 rounded-3xl shadow-2xl border border-[#355E3B]/40 group hover:shadow-[#355E3B]/30 transition-shadow duration-500">
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#355E3B]/15 to-[#002147]/15 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-              <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight font-ut-staybro-demo text-transparent bg-clip-text bg-gradient-to-r from-white via-[#355E3B] to-[#355E3B] animate-fade-in">
+              <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight font-utstaybro text-transparent bg-clip-text bg-gradient-to-r from-white via-[#355E3B] to-[#355E3B] animate-fade-in">
                 Don’t forget to check our <br />
-                <span className="text-[#355E3B] font-grunge-decade-regular animate-pulse drop-shadow-lg">
+                <span className="text-[#355E3B] font-grunge animate-pulse drop-shadow-lg">
                   special merch!
                 </span>
               </h2>
-              <p className="text-gray-300 leading-relaxed mb-10 text-lg md:text-xl font-perandory-semi-condensed animate-fade-in-delay drop-shadow-md">
+              <p className="text-gray-300 leading-relaxed mb-10 text-lg md:text-xl font-perandory animate-fade-in-delay drop-shadow-md">
                 HEARMONY merupakan platform yang menghadirkan berbagai
                 merchandise eksklusif untuk Hearmates. Dari aksesoris unik
                 hingga stiker gemas, semua dibuat supaya pengalamanmu di
@@ -420,7 +420,7 @@ function HomeContent({ setPage = () => {} }) {
               </p>
               <button
                 onClick={() => setPage("merch")}
-                className="bg-gradient-to-r from-[#355E3B] to-[#2f5233] text-white px-10 py-4 rounded-full font-grunge-decade-regular font-bold text-lg hover:scale-110 hover:shadow-lg hover:shadow-[#355E3B]/50 transition-all duration-300 animate-bounce-subtle"
+                className="bg-gradient-to-r from-[#355E3B] to-[#2f5233] text-white px-10 py-4 rounded-full font-grunge font-bold text-lg hover:scale-110 hover:shadow-lg hover:shadow-[#355E3B]/50 transition-all duration-300 animate-bounce-subtle"
               >
                 Lihat Katalog!
               </button>
@@ -452,7 +452,7 @@ function HomeContent({ setPage = () => {} }) {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       {/* Nama produk muncul*/}
                       <div className="absolute bottom-0 left-0 right-0 p-4 text-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-                        <h3 className="text-white text-xl md:text-2xl font-bold font-grunge-decade-regular drop-shadow-lg">
+                        <h3 className="text-white text-xl md:text-2xl font-bold font-grunge drop-shadow-lg">
                           {slide.name}
                         </h3>
                       </div>
