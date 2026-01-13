@@ -2,14 +2,13 @@ import React, { useState } from "react"
 import MaskGroup from "../assets/Mask group.png"
 import { Link, NavLink } from "react-router-dom"
 
-const Navbar = ({ setPage }) => {
-  const [activePage, setActivePage] = useState("home")
+const Navbar = () => {
 
 
 
-  const linkClass = (page) =>
+  const linkClass = ({isActive}) =>
     `text-base font-semibold transition ${
-      activePage === page
+      isActive
         ? "text-[#355E3B]"
         : "text-white hover:text-[#355E3B] cursor-pointer"
     }`
