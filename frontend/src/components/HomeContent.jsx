@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { useNavigate } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -47,6 +48,7 @@ import StickerFishies from "../assets/Merch 2/sticker pack fishies.png";
 import StickerHearmony from "../assets/Merch 2/sticker pack hearmony.png";
 import StickerSkena from "../assets/Merch 2/sticker pack skena.png";
 import StickerSatuan from "../assets/Merch 2/sticker satuan meme.png";
+import { Navigate } from "react-router";
 
 const merchSlides = [
   { img: EnamelPin, name: "Enamel Pin" },
@@ -70,6 +72,7 @@ function HomeContent({ setPage = () => {} }) {
     Vector137,
     Vector96,
   ];
+  const Navigate = useNavigate();
 
   //mw nngis
   return (
@@ -379,8 +382,8 @@ function HomeContent({ setPage = () => {} }) {
           </h4>
           <button
             onClick={() => {
-              setPage("reservation");
-              window.scrollTo(0, 0);
+              Navigate("/reservation");
+              window.scrollTo({ top: 0, behavior: "smooth" });
             }}
             className="
             inline-block
@@ -419,7 +422,10 @@ function HomeContent({ setPage = () => {} }) {
                 HEARMONY makin berkesan!
               </p>
               <button
-                onClick={() => setPage("merch")}
+                onClick={() => {
+                  Navigate("/merchandise"); 
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
                 className="bg-gradient-to-r from-[#355E3B] to-[#2f5233] text-white px-10 py-4 rounded-full font-grunge font-bold text-lg hover:scale-110 hover:shadow-lg hover:shadow-[#355E3B]/50 transition-all duration-300 animate-bounce-subtle"
               >
                 Lihat Katalog!

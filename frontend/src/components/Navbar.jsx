@@ -34,7 +34,7 @@ const Navbar = ({ setPage }) => {
 
           <Link to="/reservation" className={linkClass("reservation")} onClick={() => setActivePage("reservation")}>RESERVATION</Link>
 
-          <Link to="/merchandise" className={linkClass("merchandise")} onClick={() => setActivePage("reservation")}>MERCHANDISE</Link>
+          <Link to="/merchandise" className={linkClass("merchandise")} onClick={() => setActivePage("merchandise")}>MERCHANDISE</Link>
         </div>
 
       </div>
