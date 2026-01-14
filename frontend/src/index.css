@@ -29,7 +29,3 @@
 }
 
 @import "tailwindcss";
-
-body {
-  font-family: "Stack Sans", sans-serif;
-}
