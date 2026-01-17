@@ -299,7 +299,7 @@ function MerchCatalog() {
               >
                 {selectedProduct.status === "soldout"
                   ? "Habis Terjual"
-                  : "Pre-Order Sekarang"}
+                  : "CLOSE PRE-ORDER"}
               </button>
             </div>
           </div>
