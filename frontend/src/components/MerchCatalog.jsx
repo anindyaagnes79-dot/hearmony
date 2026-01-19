@@ -24,7 +24,7 @@ const products = [
     id: 1,
     name: "Enamel Pin",
     price: "Rp 35.000",
-    status: "available",
+    status: "soldout",
     description:
       "Pin enamel yang vibrant ini bisa bikin jaket atau tas Hearmates tambah kece! Penampilan pun jadi lebih unik.",
     image: EnamelPin,
@@ -33,7 +33,7 @@ const products = [
     id: 2,
     name: "Keychain",
     price: "Rp 15.000",
-    status: "available",
+    status: "soldout",
     description:
       "Aksesoris kecil dengan desain pop-art dan colourful ini bakal bikin Hearmates makin stand-out! Cocok banget untuk digantung pada kunci, tas, atau totebag Hearmates biar berbeda dari yang lain!",
     image: Keychain,
@@ -42,7 +42,7 @@ const products = [
     id: 3,
     name: "Kipas",
     price: "Rp 10.000",
-    status: "available",
+    status: "soldout",
     description:
       "Kipas dengan desain colourful dan abstrak yang ringan dan praktis jadi wajib masuk tas setiap ke konser atau beraktivitas outdoor.",
     image: Kipas,
@@ -51,7 +51,7 @@ const products = [
     id: 4,
     name: "Sticker Pack Fishies",
     price: "Rp 15.000",
-    status: "available",
+    status: "soldout",
     description:
       "Stiker ikan nyentrik dengan warna vibrant dan artistik abis. Cocok ditempel pada laptop, tumbler, atau buku catatan supaya tambah artsy!",
     image: StickerFishies,
@@ -60,7 +60,7 @@ const products = [
     id: 5,
     name: "Sticker Pack Hearmony",
     price: "Rp 15.000",
-    status: "available",
+    status: "soldout",
     description:
       "Stiker super gemas dengan nuansa “harmony” yang membawa energi positif. Cocok untuk jurnal, koper, atau powerbank Hearmates, nih!",
     image: StickerHearmony,
@@ -69,7 +69,7 @@ const products = [
     id: 6,
     name: "Sticker Pack Skena",
     price: "Rp 15.000",
-    status: "available",
+    status: "soldout",
     description:
       "Stiker dengan ilustrasi unik dan edgy, mulai dari kucing nge-band sampai mobil retro. Klop banget deh untuk helm, HP, atau laptop Hearmates biar skena abis!",
     image: StickerSkena,
@@ -78,7 +78,7 @@ const products = [
     id: 7,
     name: "Sticker Satuan",
     price: "Rp 7.000 / Rp 12.000",
-    status: "available",
+    status: "soldout",
     description:
       "Stiker dengan kata-kata catchy dan ekspresif ini cocok banget untuk seru-seruan dan dijamin relate banget!",
     image: StickerSatuan,
@@ -175,7 +175,7 @@ function MerchCatalog() {
                 : "bg-gray-700 text-white hover:bg-gray-600"
             }`}
           >
-            Tersedia
+            Pre-Order
           </button>
           <button
             onClick={() => setFilter("soldout")}
@@ -185,7 +185,7 @@ function MerchCatalog() {
                 : "bg-gray-700 text-white hover:bg-gray-600"
             }`}
           >
-            Habis Terjual
+            Close Pre-Order
           </button>
         </div>
 
@@ -206,7 +206,7 @@ function MerchCatalog() {
                                   flex items-center justify-center 
                                   text-white text-xl font-bold"
                   >
-                    SOLD OUT
+                    CLOSE PRE-ORDER
                   </div>
                 )}
               </div>
@@ -298,7 +298,7 @@ function MerchCatalog() {
                 }`}
               >
                 {selectedProduct.status === "soldout"
-                  ? "Habis Terjual"
+                  ? "CLOSE PRE-ORDER"
                   : "CLOSE PRE-ORDER"}
               </button>
             </div>
