@@ -277,9 +277,6 @@ function HomeContent() {
               <img src={Vector136} alt="element" className=" blur-[1.5px]" />
             </div>
           </div>
-          <div className="absolute pointer-events-none scale-[0.3] bottom-[-270px] md:bottom-[-570px] md:left-[0px] z-[3]">
-            <img src={tanganhijau} alt="element" className="" />
-          </div>
 
           {/* booth sections */}
           <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-10">
@@ -362,6 +359,7 @@ function HomeContent() {
             text-white
         "
         >
+          <img src={tanganhijau} alt="element" className="block relative left-1/2 -translate-x-1/2 h-auto w-80% md:w-48 md:scale-[1.6] lg:scale-[1.9] xl:scale-[2.1] mb-6" />
           <h2
             className="
           text-xl sm:text-2xl md:text-4xl lg:text-6xl
